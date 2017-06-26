@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+// less 库
+@import "./zless/z.less";
+@import "./zless/css3.less";
+
+.reset();
+
+.header{
+
+	.comWidth{
+		.bc();
+		width:1000px;
+		.clearfix();
+	}
+
+	.topBar{
+		@topBar_h: 31px;
+		height: @topBar_h;
+		height: 100%;
+		background-color: #f7f7f7;
+		line-height: @topBar_h;
+		.font-s12();
+		a{
+			color: #666666;
+			&:hover{
+				color: red;
+			}
+		}
+		.leftArea{
+			.fl();
+			.font-wb();
+		    padding-left: 16px;
+		    background: url('../images/icon/collection.jpg') left center no-repeat;
+		}
+		.rightArea{
+			.fr();
+		}
+	}
+
+	.logoBar{
+		@logoBar_h: 86px;
+		height: @logoBar_h;
+		background-color: #1d7ad9;
+
+		.logo{
+			.fl();
+			padding-left: 39px;
+			padding-top: 13px;
+		}
+
+		.searchBox{
+			width: 430px;		
+			padding-left: 185px;
+			padding-top: 23px;
+			.fl();
+			.clearfix();
+			.search_text{
+				width: 360px;
+				height: 35px;
+				background-color: #ffffff;
+				box-sizing: border-box;
+				padding: 0 5px;
+				.fl();
+			}
+			.search_btn{
+				width: 70px;
+				height: 35px;
+				line-height: 35px;
+				color: #ffffff;
+				background-color: #ff8c00;
+				.tc();
+				.fr();
+				.font-s14();
+			}
+		}
+
+		.shopCar{
+			width: 145px;
+			height: 35px;
+			line-height: 35px;
+			margin-top: 23px;
+			margin-left: 31px;
+			color: #ffffff;
+			background-color: #ff8800;
+			.font-s14();
+			.fl();
+			.shopText{
+				width: 87px;
+				height: 100%;
+				border-right: #E27A00 solid 1px;
+				background: url('../images/icon/shaoIcon.jpg') 10px center no-repeat;
+				.fl();
+				text-indent: 40px;
+			}
+			.shopNum{
+				width: 27px;
+				border-left: #ff9c01 solid 1px;
+				padding-right: 29px;
+				background: url('../images/icon/sj.jpg') 33px center no-repeat;
+				.fl();
+				.tr();
+			}
+		}
+
+	}
+
+	.navBar{
+		@navBar_h: 35px;
+		height: @navBar_h;
+		color: #ffffff;
+		background-color: #1369c0;
+		.shopClass{
+			width: 189px;
+			height: @navBar_h;
+			.fl();
+		}
+		h3{
+			line-height: @navBar_h;
+			.font-s14();
+			.tc();
+		}
+		.shopClass_icon{
+			.dib();
+			width: 11px;
+    		height: 7px;
+    		margin-left: 11px;
+			background: url('../images/icon/icon.png')  no-repeat;
+			overflow: hidden;
+		    background-position: 0 -39px;
+		    overflow: hidden;
+		}
+		.shopClass_show{
+			width: 100%;
+			border-right: #ddd solid 1px;
+		}
+		.shopClass_item{
+			padding: 13px 10px;
+			background-color: #4593fd;
+			border-top: #5aa1fe solid 1px;
+			border-bottom: #3487f2 solid 1px;
+			a{
+				color: #fff;
+				.font-s12();
+			}
+			dt{
+				height: 22.73px;
+				line-height: 2.73px;
+				overflow: hidden;
+    			background: url('../images/icon/shop_sj.jpg') right center no-repeat; 
+			}
+			.b{
+				.font-s14();
+			}
+			.aLink{
+				.dib();
+				width: 46px;
+				height: 20px;
+				line-height: 20px;
+				background-color: #106ac0;
+				.tc();
+				.border-radius(10px);
+				text-decoration: underline;
+			}
+		}
+		.showClass_list{
+
+		}
+		.nav{
+			.fl();
+			height: @navBar_h;
+			li{
+				.fl();
+				width: 100px;
+				height: @navBar_h;
+				.tc();
+			}
+			a{
+				color: #fff;
+				.font-s10();
+				line-height: @navBar_h;
+			}
+			.active{
+				background-color: #4593fd;
+			}
+		}
+	}
+
+}
+
+.footer{
+	margin-top: 500px;
+}
+
